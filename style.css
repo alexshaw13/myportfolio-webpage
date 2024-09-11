@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+:root {
+    --primaryColor: #062627;
+    --secondaryColor: #86DD87;
+    --secondaryColor2: #224849;
+}
+
+body {
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'SUSE';
+    background-color: var(--secondaryColor2);
+    height: 10px;
+    padding: 20px 20px 20px 20px;
+}
+
+.welcome button {
+    color: white;
+    width: 80px;
+    padding: 5px;
+    font-family: 'SUSE';
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+    transition: 1.5s;
+    color: var(--secondaryColor);
+}
+
+main {
+    display: grid;
+    gap: 150px;
+    font-family: 'SUSE';
+    padding: 30px;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(/images/bg-desktop.png);
+    background-size: cover;
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--secondaryColor2);
+    background-color: var(--secondaryColor2);
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: var(--secondaryColor);
+}
+
+ion-icon {
+    color: var(--secondaryColor);
+    width: 40px;
+    height: 40px;
+}
+
+ion-icon:hover {
+    transition: 0.5s;
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+img {
+    width: 450px;
+}
+
+.para h1 {
+    font-size: 55px;
+}
+
+.lng h2 {
+    text-align: center;
+}
+
+.cards:hover {
+    transition: 1.5s;
+    background-color: var(--secondaryColor2);
+    cursor: pointer;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub h1 {
+    font-size: 20px;
+    text-align: left;
+}
+
+.paragraph {
+    background-color: var(--secondaryColor2);
+    border-radius: 20px 60px 20px 60px;
+    padding: 20px 20px 20px 20px;
+}
+
+.aboutMe .paragraph {
+    width: 600px;
+    background-color: var(--secondaryColor2);
+}
+
+.paragraph p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.cards {
+    background-color: var(--secondaryColor);
+    padding: 30px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.cards img {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.edu  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.edu .paragraph {
+    width: 400px;
+}
+
+.edu img {
+    width: 450px;
+}
+
+.work{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.work .paragraph {
+    width: 450px;
+}
+
+footer {
+    margin-top: 150px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #224849;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer label {
+    font-size: 20px;
+    font-family: 'SUSE';
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:426px) {
+
+    nav {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        gap: 100px;
+        justify-content: center;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .welcome {
+        display: grid;
+        text-align: center;
+    }
+
+    .welcome button {
+        display: none;
+    }
+
+    .para h1 {
+        font-size: 25px;
+    }
+
+    .para h2 {
+        font-size: 15px;
+    }
+
+    .para p {
+        font-size: 10px;
+    }
+
+    .socials {
+       display: block;
+    }
+
+    .bitmoji img {
+        width: 200px;
+    }
+
+    button {
+        width: 30px;
+        height: 30px;
+    }
+
+    ion-icon {
+        width: 18px;
+    }
+
+    .aboutMe {
+        display: grid;
+    }
+
+    .aboutMe .paragraph {
+        width: 300px;
+    }
+
+    .paragraph p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .skills {
+        display: grid;
+    }
+
+    .skills h1 {
+        font-size: 30px;
+    }
+
+    .skills h2{
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .cards {
+        grid-gap: 10px;
+        padding: 20px;
+        width: 170px;
+    }
+
+    .cards img {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+    }
+
+    .edu {
+        display: grid;
+        gap: 20px;
+    }
+
+    .edu .paragraph {
+        width: 300px;
+    }
+
+    .edu .bitmoji {
+        display: flex;
+        justify-content: center;
+    }
+
+    .work {
+        display: grid;
+        gap: 30px;
+    }
+
+    .work .paragraph{
+        width: 300px;
+    }
+
+    .work .bitmoji {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        height: 100px;
+    }
+
+    footer img {
+        width: 80px;
+    }
+
+    footer .socials {
+        display: flex;
+        gap: 0px;
+    }
+
+    footer label {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    nav {
+        height: 30px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .pages {
+        display: flex;
+    }
+
+    main {
+        display: grid;
+        gap: 150px;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .welcome {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
+    }
+
+    .para h1 {
+        font-size: 35px;
+    }
+
+    .para h2 {
+        font-size: 15px;
+    }
+
+    .para p {
+        font-size: 10px;
+    }
+
+    .socials {
+       display: block;
+    }
+
+    .bitmoji img {
+        width: 320px;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+    }
+
+    ion-icon {
+        width: 27px;
+    }
+
+    .aboutMe {
+        display: flex;
+    }
+
+    .aboutMe .paragraph {
+        width: 300px;
+    }
+
+    .paragraph p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .skills {
+        display: flex;
+    }
+
+    .skills h1 {
+        font-size: 30px;
+    }
+
+    .skills h2{
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .cards {
+        grid-gap: 10px;
+        padding: 20px;
+        width: 230px;
+    }
+
+    .cards img {
+        width: 110px;
+        height: 110px;
+        border-radius: 8px;
+    }
+
+    .edu {
+        display: flex;
+        gap: 20px;
+    }
+
+    .edu .paragraph {
+        width: 270px;
+    }
+
+    .edu .bitmoji {
+        display: flex;
+        justify-content: center;
+    }
+
+    .work {
+        display: flex;
+        gap: 30px;
+    }
+
+    .work .paragraph{
+        width: 270px;
+    }
+
+    .work .bitmoji {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer img {
+        width: 80px;
+    }
+
+    footer label {
+        font-size: 20px;
+    }
+}
